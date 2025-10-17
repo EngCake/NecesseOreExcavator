@@ -42,8 +42,8 @@ public class DoDamagePatch {
         }
 
         Level level = client.getLevel();
-        int tileX = self.getTileX();
-        int tileY = self.getTileY();
+        int tileX = self.tileX;
+        int tileY = self.tileY;
 
         if (isOre(result.levelObject.object)) {
             checkAdjacentObjects(level, objectLayerID, tileX, tileY, toolTier, attacker, client, showEffects, mouseX, mouseY);
